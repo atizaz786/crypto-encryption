@@ -4,6 +4,8 @@ import { Tabs } from 'antd';
 import Encrypter from './pages/encrypter';
 import Decrypter from './pages/decrypter';
 import HowToUse from './pages/HowToUse';
+import Footer from './pages/footer';
+
 
 
 const items = [
@@ -30,6 +32,7 @@ function App() {
   return (
     <div className="App" style={{ padding: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <Tabs defaultActiveKey="1" items={items} centered />
+    <Footer />
   </div>
   );
 }
