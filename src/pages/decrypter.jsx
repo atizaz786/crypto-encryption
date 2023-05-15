@@ -48,7 +48,8 @@ const FileDecryptor = () => {
         addonBefore="Decryption Key"
         style={{ width: '300px', marginBottom: '20px' }}
       />
-      <Button type="primary" onClick={onFileUpload}>Decrypt</Button>
+      {selectedFile && 
+      <Button type="primary" onClick={onFileUpload}>Decrypt</Button> }
     </div>
   );
 };

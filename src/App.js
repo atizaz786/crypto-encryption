@@ -3,19 +3,26 @@ import './App.css';
 import { Tabs } from 'antd';
 import Encrypter from './pages/encrypter';
 import Decrypter from './pages/decrypter';
+import HowToUse from './pages/HowToUse';
 
 
 const items = [
   {
     key: '1',
+    label: `How To Use?`,
+    children: <HowToUse/>,
+  },
+  {
+    key: '2',
     label: `Encrypt`,
     children: <Encrypter />,
   },
   {
-    key: '2',
+    key: '3',
     label: `Decrypt`,
     children: <Decrypter />,
   },
+  
   
 ];
 
